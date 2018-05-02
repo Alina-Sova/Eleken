@@ -1,0 +1,314 @@
+body {
+  margin: 0;
+  font-family: sans-serif; }
+
+.center {
+  margin: 0 5%;
+  max-width: 1200px; }
+
+.header {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  border-bottom: 1px solid #adc1c4; }
+  .header img {
+    margin: 26px -8px -28px; }
+  .header .nav {
+    padding: 0 0;
+    display: flex;
+    justify-content: center;
+    margin: 8px 0 23px; }
+    .header .nav li {
+      float: left;
+      list-style: none; }
+      .header .nav li a {
+        text-decoration: none;
+        font-size: 14px;
+        margin: 0 8px;
+        padding: 0 10px;
+        color: #adc1c4;
+        font-weight: 700; }
+        .header .nav li a:hover {
+          color: #1c1b1a;
+          border-bottom: 3px solid #257bec;
+          padding: 0 10px 23px; }
+
+.inlist {
+  padding: 15px 0;
+  margin: 30px -4px 26px;
+  border-bottom: 1px solid #adc1c4;
+  font-size: 23px; }
+  .inlist p {
+    display: inline; }
+  .inlist .btn-group {
+    float: right; }
+    .inlist .btn-group button {
+      border: none;
+      padding: 4px 11px;
+      background: #fff; }
+      .inlist .btn-group button:last-child {
+        border-left: 1px solid #adc1c4; }
+
+.flex {
+  display: flex; }
+  .flex .flex-1:first-child {
+    min-width: 165px; }
+  .flex .flex-1:nth-child(4) {
+    min-width: 130px; }
+
+[class^="flex-"] {
+  font-size: 14px;
+  margin: 20px 5px 0;
+  padding: 9px 0px 0;
+  width: 9%; }
+
+.table-header > [class^="flex-"] {
+  font-weight: bold;
+  width: 8%;
+  line-height: 2;
+  color: #adc1c4;
+  margin: -10px 20px -4px -1px;
+  font-size: 10px;
+  text-transform: uppercase; }
+
+.table-header .flex-1:first-child {
+  margin: -9px 4px 0px 0; }
+
+.table-body {
+  border-bottom: 1px solid #adc1c4; }
+  .table-body .flex-1:first-child {
+    margin: 15px 0px; }
+    .table-body .flex-1:first-child p {
+      margin: 0; }
+    .table-body .flex-1:first-child img {
+      margin: 0 7% 0 0;
+      float: left; }
+  .table-body .flex-1:nth-child(n+3):nth-child(-n+4)::after {
+    content: url(../img/question.png);
+    padding: 0 4px; }
+  .table-body .flex-1:nth-child(4) span {
+    padding: 0 8px;
+    width: 10px;
+    height: 10px;
+    margin-right: 4px;
+    border-radius: 50%; }
+  .table-body .flex-1:nth-child(4) .platinum {
+    background-color: #999999; }
+  .table-body .flex-1:nth-child(4) .silver {
+    background-color: #adc1c4; }
+  .table-body .flex-1:nth-child(4) .gold {
+    background-color: #eca750; }
+  .table-body .flex-1:nth-child(4) .bronze {
+    background-color: #ab6341; }
+  .table-body .flex-1:nth-child(4) .catastrophic {
+    background-color: #d54a51; }
+  .table-body .flex-1:last-child {
+    min-width: 190px;
+    margin: 14px 0; }
+  .table-body .flex-1 .stars {
+    margin: 0;
+    padding: 0; }
+    .table-body .flex-1 .stars li {
+      position: relative;
+      float: left;
+      list-style: none;
+      padding: 0 1px; }
+      .table-body .flex-1 .stars li:before {
+        content: "\2605";
+        position: absolute;
+        color: gold; }
+    .table-body .flex-1 .stars .greyStar:before {
+      color: grey; }
+  .table-body button {
+    padding: 8px 24px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700; }
+    .table-body button.overview {
+      background: #fff;
+      border: 1px solid #adc1c4;
+      color: #257bec; }
+    .table-body button.buy {
+      background: #257bec;
+      color: #fff;
+      border: none;
+      padding: 9px 22px;
+      float: right; }
+
+.footer {
+  display: block;
+  height: 32px;
+  padding: 18px 0;
+  margin: 88px 0 0;
+  font-size: 12px;
+  clear: both;
+  box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.2); }
+  .footer p {
+    float: left;
+    letter-spacing: 0.5px;
+    margin: 0; }
+  .footer ul li {
+    margin: 0 7px;
+    float: left;
+    list-style: none; }
+    .footer ul li a {
+      text-decoration: none;
+      padding: 0 10px;
+      color: #adc1c4; }
+      .footer ul li a:hover {
+        text-shadow: 0 0 10px #adc1c4; }
+
+.grid .flex {
+  flex-flow: row nowrap; }
+
+.list section {
+  margin: 0 -14px; }
+  .list section .flex {
+    display: block; }
+  .list section .table-header {
+    display: none; }
+  .list section .table-body {
+    border: 1px solid #adc1c4;
+    float: left;
+    position: relative;
+    margin: 12px 1% 30px;
+    width: 20%;
+    padding: 0 17px; }
+    .list section .table-body .flex-1 {
+      text-align: right;
+      margin: 9px 12px;
+      padding: 7px 0;
+      width: auto; }
+      .list section .table-body .flex-1:first-child {
+        min-width: 195px;
+        margin: 25px 29px 50px;
+        font-size: 21px; }
+        .list section .table-body .flex-1:first-child img {
+          width: 55px;
+          margin: -5px 17px 0 -18px;
+          float: left; }
+        .list section .table-body .flex-1:first-child p {
+          margin: 0px 45px; }
+      .list section .table-body .flex-1:nth-child(n+2):nth-child(-n+6) {
+        border-bottom: 1px solid #adc1c4; }
+      .list section .table-body .flex-1:nth-child(n+2):nth-child(-n+7):before {
+        float: left;
+        content: attr(data-head) ": ";
+        white-space: nowrap;
+        font-weight: bold;
+        color: #adc1c4;
+        font-size: 12px; }
+      .list section .table-body .flex-1:nth-child(n+5):nth-child(-n+7):before {
+        content: url(../img/question.png) attr(data-head) ": "; }
+      .list section .table-body .flex-1 button {
+        border: none;
+        border-radius: 0;
+        padding: 13px 0;
+        position: absolute;
+        bottom: 0;
+        width: 50%; }
+        .list section .table-body .flex-1 button.overview {
+          left: 0;
+          padding: 12.5px;
+          border-top: 1px solid #adc1c4; }
+        .list section .table-body .flex-1 button.buy {
+          right: 0; }
+    .list section .table-body .price {
+      text-align: center;
+      margin: 22px auto 39px;
+      font-size: 37px; }
+
+.list .footer {
+  height: 8px;
+  padding: 31px 0 50px;
+  font-size: 12px;
+  clear: both;
+  box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.2); }
+
+@media (max-width: 1320px) {
+  .list section .table-body {
+    margin: 12px 1% 30px;
+    width: 26%; }
+    .list section .table-body .flex-1 {
+      margin: 9px 1%; } }
+
+@media (max-width: 900px) {
+  .nav, .footer_nav {
+    display: none !important; }
+  .header img {
+    margin: 20px 0 7px 7%; }
+  .btn-group {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    float: right; }
+    .btn-group button:last-child {
+      display: none; }
+  .flex {
+    display: block; }
+  section {
+    margin: 0 -14px; }
+    section .flex {
+      display: block; }
+    section .table-header {
+      display: none; }
+    section .table-body {
+      border: 1px solid #adc1c4;
+      float: left;
+      position: relative;
+      margin: 12px 1% 30px;
+      width: 40%;
+      padding: 0 17px; }
+      section .table-body .flex-1 {
+        text-align: right;
+        margin: 9px 12px;
+        padding: 7px 0;
+        width: auto; }
+        section .table-body .flex-1:first-child {
+          min-width: 195px;
+          margin: 25px 29px 50px;
+          font-size: 21px; }
+          section .table-body .flex-1:first-child img {
+            width: 55px;
+            margin: -5px 17px 0 -18px;
+            float: left; }
+          section .table-body .flex-1:first-child p {
+            margin: 0px 45px; }
+        section .table-body .flex-1:nth-child(n+2):nth-child(-n+6) {
+          border-bottom: 1px solid #adc1c4; }
+        section .table-body .flex-1:nth-child(n+2):nth-child(-n+7):before {
+          float: left;
+          content: attr(data-head) ": ";
+          white-space: nowrap;
+          font-weight: bold;
+          color: #adc1c4;
+          font-size: 12px; }
+        section .table-body .flex-1:nth-child(n+5):nth-child(-n+7):before {
+          content: url(../img/question.png) attr(data-head) ": "; }
+        section .table-body .flex-1 button {
+          border: none;
+          border-radius: 0;
+          padding: 13px 0;
+          position: absolute;
+          bottom: 0;
+          width: 50%; }
+          section .table-body .flex-1 button.overview {
+            left: 0;
+            padding: 12.5px;
+            border-top: 1px solid #adc1c4; }
+          section .table-body .flex-1 button.buy {
+            right: 0; }
+      section .table-body .price {
+        text-align: center;
+        margin: 22px auto 39px;
+        font-size: 37px; }
+  .footer {
+    height: 8px;
+    padding: 31px 0 50px;
+    font-size: 12px;
+    clear: both;
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.2); } }
+
+@media (max-width: 700px) {
+  .table-body {
+    width: 60% !important; } }

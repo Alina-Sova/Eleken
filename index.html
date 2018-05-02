@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/slyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <title>Eleken</title>
+</head>
+<body>
+    <div id='item-group'>
+        <div class='header'>
+            <div class="center">
+                <img src="img/logo.png" alt="logo">
+                <ul class="nav">
+                    <li><a href="#">Personal Plans</a></li>
+                    <li><a href="#">Business Plans</a></li>
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="center">
+        <div class="inlist">
+            <p class="inlist_p">Insurance liast:</p>
+            <div class='btn-group'>
+                <button id='view-grid'><img src="img/list.png" alt=""></button>
+                <button id='view-list'><img src="img/grid.png" alt=""></button>
+            </div>
+        </div>
+            <section>
+                <div class="flex table-header">
+                    <div class="flex-1">Company</div>
+                    <div class="flex-1">Covering</div>
+                    <div class="flex-1">Type</div>
+                    <div class="flex-1">Metal level</div>
+                    <div class="flex-1">Drugs</div>
+                    <div class="flex-1">Primary Care Visits</div>
+                    <div class="flex-1">Yearly Deductible</div>
+                    <div class="flex-1">Price</div>
+                    <div class="flex-1"></div>
+                </div>
+                <div class="flex table-body">
+                    <div class="flex-1"> 
+                        <img src="img/1.png" alt="">
+                        <div> <p> Insurcom</p>
+                            <ul class="stars">
+                                <li>&#9734;</li>
+                                <li>&#9734;</li>
+                                <li>&#9734;</li>
+                                <li>&#9734;</li>
+                                <li>&#9734;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex-1" data-head="Covering">Health</div>
+                    <div class="flex-1" data-head="Type">PPO</div>
+                    <div class="flex-1" data-head="Metal level"><span class="platinum"></span>Platinum</div>
+                    <div class="flex-1" data-head="Drugs">$15</div>
+                    <div class="flex-1" data-head="Primary Care Visits">$75</div>
+                    <div class="flex-1" data-head="Yearly Deductible">$6000</div>
+                    <div class="flex-1 price">$365/mon</div>
+                    <div class="flex-1" ><button class="overview">overview</button><button class="buy">buy</button></div>
+                </div>
+                <div class="flex table-body">
+                    <div class="flex-1"> 
+                        <img src="img/2.png" alt=""><p>Health Ins</p>
+                        <ul class="stars">
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li class="greyStar">&#9734;</li>
+                            <li class="greyStar">&#9734;</li>
+                        </ul>
+                    </div>
+                    <div class="flex-1" data-head="Covering">Health</div>
+                    <div class="flex-1" data-head="Type">All-in-one</div>
+                    <div class="flex-1" data-head="Metal level"><span class="silver"></span>Silver</div>
+                    <div class="flex-1" data-head="Drugs">100%</div>
+                    <div class="flex-1" data-head="Primary Care Visits">$45</div>
+                    <div class="flex-1" data-head="Yearly Deductible">$4500</div>
+                    <div class="flex-1 price">$611/mon</div>
+                    <div class="flex-1" ><button class="overview">overview</button><button class="buy">buy</button></div>
+                </div>
+                <div class="flex table-body">
+                    <div class="flex-1"> 
+                        <img src="img/3.png" alt=""><p>Dentalife</p>
+                        <ul class="stars">
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li class="greyStar">&#9734;</li>
+                        </ul>
+                    </div>
+                    <div class="flex-1" data-head="Covering">Dental</div>
+                    <div class="flex-1" data-head="Type">EPO</div>
+                    <div class="flex-1" data-head="Metal level"><span class="gold"></span>Gold</div>
+                    <div class="flex-1" data-head="Drugs">100%</div>
+                    <div class="flex-1" data-head="Primary Care Visits">$75</div>
+                    <div class="flex-1" data-head="Yearly Deductible">$5000</div>
+                    <div class="flex-1 price">$283/mon</div>
+                    <div class="flex-1" ><button class="overview">overview</button><button class="buy">buy</button></div>
+                </div>
+                <div class="flex table-body">
+                    <div class="flex-1"> 
+                        <img src="img/1.png" alt=""><p>Insurcom</p>
+                        <ul class="stars">
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                        </ul>
+                    </div>
+                    <div class="flex-1" data-head="Covering">Vision</div>
+                    <div class="flex-1" data-head="Type">POS</div>
+                    <div class="flex-1" data-head="Metal level"><span class="bronze"></span>Bronze</div>
+                    <div class="flex-1" data-head="Drugs">100%</div>
+                    <div class="flex-1" data-head="Primary Care Visits">$60</div>
+                    <div class="flex-1" data-head="Yearly Deductible">$2600</div>
+                    <div class="flex-1 price">$214/mon</div>
+                    <div class="flex-1" ><button class="overview">overview</button><button class="buy">buy</button></div>
+                </div>
+                <div class="flex table-body">
+                    <div class="flex-1"> 
+                        <img src="img/4.png" alt=""><p>Medicon</p>
+                        <ul class="stars">
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                        </ul>
+                    </div>
+                    <div class="flex-1" data-head="Covering">Health</div>
+                    <div class="flex-1" data-head="Type">PPO</div>
+                    <div class="flex-1" data-head="Metal level"><span class="catastrophic"></span>Catastrophic</div>
+                    <div class="flex-1" data-head="Drugs">$20</div>
+                    <div class="flex-1" data-head="Primary Care Visits">40%</div>
+                    <div class="flex-1" data-head="Yearly Deductible">$6000</div>
+                    <div class="flex-1 price">$300/mon</div>
+                    <div class="flex-1" ><button class="overview">overview</button><button class="buy">buy</button></div>
+                </div>
+                <div class="flex table-body">
+                    <div class="flex-1"> 
+                        <img src="img/2.png" alt=""><p>Health Ins</p>
+                        <ul class="stars">
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li class="greyStar">&#9734;</li>
+                            <li class="greyStar">&#9734;</li>
+                        </ul>
+                    </div>
+                    <div class="flex-1" data-head="Covering">Dental</div>
+                    <div class="flex-1" data-head="Type">POS</div>
+                    <div class="flex-1" data-head="Metal level"><span class="platinum"></span>Platinum</div>
+                    <div class="flex-1" data-head="Drugs">$15</div>
+                    <div class="flex-1" data-head="Primary Care Visits">$75</div>
+                    <div class="flex-1" data-head="Yearly Deductible">$5000</div>
+                    <div class="flex-1 price">$234/mon</div>
+                    <div class="flex-1" ><button class="overview">overview</button><button class="buy">buy</button></div>
+                </div>
+                <div class="flex table-body">
+                    <div class="flex-1"> 
+                        <img src="img/1.png" alt=""><p>Insurcom</p>
+                        <ul class="stars">
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                        </ul>
+                    </div>
+                    <div class="flex-1" data-head="Covering">Health</div>
+                    <div class="flex-1" data-head="Type">HMO</div>
+                    <div class="flex-1" data-head="Metal level"><span class="gold"></span>Gold</div>
+                    <div class="flex-1" data-head="Drugs">100%</div>
+                    <div class="flex-1" data-head="Primary Care Visits">$45</div>
+                    <div class="flex-1" data-head="Yearly Deductible">$4500</div>
+                    <div class="flex-1 price">$366/mon</div>
+                    <div class="flex-1" ><button class="overview">overview</button><button class="buy">buy</button></div>
+                </div>
+                <div class="flex table-body">
+                    <div class="flex-1"> 
+                        <img src="img/4.png" alt=""><p>Medicon</p>
+                        <ul class="stars">
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                            <li>&#9734;</li>
+                        </ul>
+                    </div>
+                    <div class="flex-1" data-head="Covering">All-in-one</div>
+                    <div class="flex-1" data-head="Type">EPO</div>
+                    <div class="flex-1" data-head="Metal level"><span class="catastrophic"></span> Catastrophic</div>
+                    <div class="flex-1" data-head="Drugs">$15</div>
+                    <div class="flex-1" data-head="Primary Care Visits">50%</div>
+                    <div class="flex-1" data-head="Yearly Deductible">$2600</div>
+                    <div class="flex-1 price">$371/mon</div>
+                    <div class="flex-1" ><button class="overview">overview</button><button class="buy">buy</button></div>
+                </div>
+        
+            </section>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="center">
+            <p>INSURE. All right reserved 2017</p>
+            <ul class="footer_nav">
+                <li><a href="#">Personal plans</a></li>
+                <li><a href="#">Business plans</a></li>
+                <li><a href="#">Guide</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

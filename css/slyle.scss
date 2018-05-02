@@ -1,0 +1,410 @@
+$flexGrey:#adc1c4;
+$flexBlue: #257bec;
+$flexWhite: #fff;
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+.center{
+  margin: 0 5%;
+  max-width: 1200px;
+}
+  .header {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    border-bottom: 1px solid $flexGrey;
+    img{
+      margin: 26px -8px -28px;
+    }
+    .nav{
+      padding: 0 0;
+      display: flex;
+      justify-content: center;
+      margin: 8px 0 23px;
+      li{
+        float: left;
+        list-style: none;
+        a{
+          text-decoration: none;
+          font-size: 14px;
+          margin: 0 8px;
+          padding: 0 10px;
+          color: $flexGrey;
+          font-weight: 700;
+          &:hover{
+            color: #1c1b1a;
+            border-bottom: 3px solid $flexBlue;
+            padding: 0 10px 23px;
+          }
+        }
+      }
+    }
+  }
+  .inlist{
+    padding: 15px 0;
+    margin: 30px -4px 26px;
+    border-bottom: 1px solid $flexGrey;
+    font-size: 23px;
+    p{
+      display: inline;
+    }
+    .btn-group {
+      float: right;
+      button {
+        border: none;
+        padding: 4px 11px;
+        background: $flexWhite;
+      &:last-child{
+        border-left: 1px solid $flexGrey;
+      }
+    }
+    }
+  }
+  .flex {
+    display:flex;
+    .flex-1:first-child{
+      min-width: 165px;
+    }
+    .flex-1:nth-child(4){
+      min-width: 130px;
+    }
+  }
+  
+  [class^="flex-"] {
+    font-size: 14px;
+    margin: 20px 5px 0;
+    padding: 9px 0px 0;
+    width: 9%;
+  }
+    
+  .table-header {
+    > [class^="flex-"] {
+      font-weight: bold;
+    width: 8%;
+    line-height: 2;
+    color: $flexGrey;
+    margin: -10px 20px -4px -1px;
+    font-size: 10px;
+    text-transform: uppercase;
+    }
+    .flex-1:first-child{
+      margin: -9px 4px 0px 0;
+    }
+  }
+  .table-body {
+    border-bottom: 1px solid $flexGrey;
+    .flex-1{      
+      &:first-child{
+        margin: 15px 0px;
+        p{
+          margin: 0;
+        }
+        img{
+          margin: 0 7% 0 0;
+          float: left;
+        }
+      }
+      &:nth-child(n+3):nth-child(-n+4)::after{
+        content:  url(../img/question.png);
+        padding: 0 4px;
+      }
+      &:nth-child(4){
+        span{
+          padding: 0 8px;
+          width: 10px;
+          height: 10px;
+          margin-right: 4px;
+          border-radius: 50%;
+        }
+        .platinum{
+          background-color: #999999;
+        }
+        .silver{
+          background-color: $flexGrey;
+        }
+        .gold{
+          background-color: #eca750;
+        }
+        .bronze{
+          background-color: #ab6341;
+        }
+        .catastrophic{
+          background-color: #d54a51;
+        }
+      }
+      &:last-child{
+        min-width: 190px;
+        margin: 14px 0;
+      }
+      .stars{
+        margin: 0;
+        padding: 0;
+        li{
+          position: relative;
+          float: left;
+          list-style: none;
+          padding: 0 1px;
+          &:before {
+            content: "\2605";
+            position: absolute;
+            color: gold;
+          }
+        }
+        .greyStar{
+          &:before {
+            color: grey;
+          }
+        }
+      }
+    }
+    button{  
+      padding: 8px 24px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 700; 
+      &.overview{
+        background: $flexWhite;
+        border: 1px solid $flexGrey;
+        color: $flexBlue;
+      }
+      &.buy{
+        background: $flexBlue;
+        color: $flexWhite;
+        border: none;
+        padding: 9px 22px;    
+        float: right;
+      } 
+    }
+  }
+
+.footer{
+    display: block;
+    height: 32px;
+    padding: 18px 0;
+    margin: 88px 0 0;
+    font-size: 12px;
+    clear: both;
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.2);
+  p{
+    float: left;
+    letter-spacing: 0.5px;
+    margin: 0;
+  }
+  ul{
+    li{
+      margin: 0 7px;
+      float: left;
+      list-style: none;
+      a{
+        text-decoration: none;
+        padding: 0 10px;
+        color: $flexGrey;
+        &:hover{
+          text-shadow: 0 0 10px $flexGrey;
+        }
+      }
+    }
+  }
+}
+
+.grid {
+  .flex {
+    flex-flow: row nowrap;
+  }
+}
+.list {
+  section{
+    margin: 0 -14px;
+  .flex{
+    display: block;
+  }
+     .table-header {
+      display:none;
+    }
+    .table-body {
+      border: 1px solid $flexGrey;
+      float: left;
+      position: relative;
+      margin: 12px 1% 30px;
+      width: 20%;
+      padding: 0 17px;
+      .flex-1 {
+        text-align: right;
+        margin: 9px 12px;
+        padding: 7px 0;
+        width: auto;
+        &:first-child {
+          min-width: 195px;
+          margin: 25px 29px 50px;
+          font-size: 21px;
+          img{
+            width: 55px;
+            margin: -5px 17px 0 -18px;
+            float: left;
+          }
+          p{
+            margin: 0px 45px;
+          }
+        }
+        &:nth-child(n+2):nth-child(-n+6) {
+          border-bottom: 1px solid $flexGrey;
+        }
+        &:nth-child(n+2):nth-child(-n+7):before {
+          float: left;
+          content: attr(data-head) ": ";
+          white-space: nowrap;
+          font-weight: bold;
+          color: $flexGrey;
+          font-size: 12px;
+        }
+        &:nth-child(n+5):nth-child(-n+7):before {
+          content: url(../img/question.png) attr(data-head) ": ";
+        }
+        
+        button{  
+          border: none;
+          border-radius: 0;
+          padding: 13px 0;
+          position: absolute;
+          bottom: 0;
+          width: 50%; 
+          &.overview{
+            left: 0;
+            padding: 12.5px;
+            border-top: 1px solid $flexGrey;
+          }
+          &.buy{
+            right: 0;    
+          } 
+        }      
+      }
+      .price{
+        text-align: center;
+        margin: 22px auto 39px;
+        font-size: 37px;
+      }
+    }
+  }
+  .footer{
+    height: 8px;
+    padding: 31px 0 50px;
+    font-size: 12px;
+    clear: both;
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+@media (max-width: 1320px) {
+ .list section .table-body {
+    margin: 12px 1% 30px;
+    width: 26%;
+    .flex-1 {
+      margin: 9px 1%;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .nav, .footer_nav{
+    display:none !important;
+  }
+ .header img{
+   margin: 20px 0 7px 7%;
+  }
+    .btn-group {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    float: right;
+    button:last-child {
+      display: none;
+    }
+  }
+  .flex{
+    display: block;
+  }
+  section{
+    margin: 0 -14px;
+  .flex{
+    display: block;
+    }
+      .table-header {
+      display:none;
+    }
+    .table-body {
+      border: 1px solid $flexGrey;
+      float: left;
+      position: relative;
+      margin: 12px 1% 30px;
+      width: 40%;
+      padding: 0 17px;
+      .flex-1 {
+        text-align: right;
+        margin: 9px 12px;
+        padding: 7px 0;
+        width: auto;
+        &:first-child {
+          min-width: 195px;
+          margin: 25px 29px 50px;
+          font-size: 21px;
+          img{
+            width: 55px;
+            margin: -5px 17px 0 -18px;
+            float: left;
+          }
+          p{
+            margin: 0px 45px;
+          }
+        }
+        &:nth-child(n+2):nth-child(-n+6) {
+          border-bottom: 1px solid $flexGrey;
+        }
+        &:nth-child(n+2):nth-child(-n+7):before {
+          float: left;
+          content: attr(data-head) ": ";
+          white-space: nowrap;
+          font-weight: bold;
+          color: $flexGrey;
+          font-size: 12px;
+        }
+        &:nth-child(n+5):nth-child(-n+7):before {
+          content: url(../img/question.png) attr(data-head) ": ";
+        }
+        
+        button{  
+          border: none;
+          border-radius: 0;
+          padding: 13px 0;
+          position: absolute;
+          bottom: 0;
+          width: 50%; 
+          &.overview{
+            left: 0;
+            padding: 12.5px;
+            border-top: 1px solid $flexGrey;
+          }
+          &.buy{
+            right: 0;    
+          } 
+        }      
+      }
+      .price{
+        text-align: center;
+        margin: 22px auto 39px;
+        font-size: 37px;
+      }
+    }
+  }
+  .footer{
+    height: 8px;
+    padding: 31px 0 50px;
+    font-size: 12px;
+    clear: both;
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 700px) {
+  .table-body {
+    width: 60% !important;
+  }
+}
